@@ -36,5 +36,4 @@ jobs:
             git commit -m "$CIRCLE_BRANCH build#$CIRCLE_BUILD_NUM"
             git checkout -b deploy
             git merge main
-            git commit -am "$CIRCLE_BRANCH build#$CIRCLE_BUILD_NUM"
             git push --force --set-upstream origin deploy
