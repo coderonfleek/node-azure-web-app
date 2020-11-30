@@ -31,9 +31,4 @@ jobs:
             - "93:6c:8e:15:5a:38:37:a1:3c:de:33:f7:0f:b8:af:4c"
       - run:
           name: Deploy to Azure Web App
-          command: |
-            git add .
-            git commit -m "$CIRCLE_BRANCH build#$CIRCLE_BUILD_NUM"
-            git checkout -b deploy
-            git merge main
-            git push --force --set-upstream origin deploy
+          command: npm run deploy
