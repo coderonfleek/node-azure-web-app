@@ -2,3 +2,5 @@ node_modules/
 
 # jetbrain IDE files
 .idea/
+my_deploy_key
+my_deploy_key.pub

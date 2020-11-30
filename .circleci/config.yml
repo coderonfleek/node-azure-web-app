@@ -28,7 +28,7 @@ jobs:
             git config user.name "coderonfleek"
       - add_ssh_keys:
           fingerprints:
-            - "93:6c:8e:15:5a:38:37:a1:3c:de:33:f7:0f:b8:af:4c"
+            - "12:5b:34:8c:6a:0a:83:65:f9:92:6e:96:2d:4e:98:32"
       - run:
           name: Deploy to Azure Web App
           command: npm run deploy
