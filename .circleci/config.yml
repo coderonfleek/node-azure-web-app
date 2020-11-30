@@ -32,6 +32,8 @@ jobs:
       - run:
           name: Deploy to Azure Web App
           command: |
+            git add .
+            git commit -m "$CIRCLE_BRANCH build#$CIRCLE_BUILD_NUM"
             git checkout deploy
             git merge main
             git commit -am "$CIRCLE_BRANCH build#$CIRCLE_BUILD_NUM"
