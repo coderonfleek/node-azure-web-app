@@ -24,11 +24,11 @@ jobs:
       - run:
           name: Configure Github credentials
           command: |
-            git config user.email "fikfikky@gmail.com"
-            git config user.name "coderonfleek"
+            git config user.email $GITHUB_EMAIL
+            git config user.name $GITHUB_USERNAME
       - add_ssh_keys:
           fingerprints:
-            - "12:5b:34:8c:6a:0a:83:65:f9:92:6e:96:2d:4e:98:32"
+            - $GITHUB_FINGERPRINT
       - run:
           name: Deploy to Azure Web App
           command: npm run deploy

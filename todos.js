@@ -18,5 +18,9 @@ module.exports = [
   {
     id: 5,
     task: "Clean the Kitchen"
+  },
+  {
+    id: 6,
+    task: "Write article"
   }
 ];
